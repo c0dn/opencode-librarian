@@ -1,0 +1,49 @@
+{
+  "name": "@c0dn/opencode-librarian",
+  "version": "0.1.0",
+  "description": "OpenCode v2 plugin: a librarian tool, a read-only research subagent for code and docs outside the project.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.ts"
+    }
+  },
+  "files": [
+    "index.ts",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "librarian",
+    "research",
+    "subagent"
+  ],
+  "author": "c0dn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c0dn/opencode-librarian.git"
+  },
+  "homepage": "https://github.com/c0dn/opencode-librarian#readme",
+  "bugs": {
+    "url": "https://github.com/c0dn/opencode-librarian/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.0.26"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.13",
+    "typescript": "^6.0.3"
+  }
+}
